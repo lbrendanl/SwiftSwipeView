@@ -11,7 +11,7 @@ import UIKit
 class ContainerViewController: UIViewController {
     
     // Outlet used in storyboard
-    @IBOutlet var scrollView: UIScrollView;
+    @IBOutlet var scrollView: UIScrollView?;
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -25,15 +25,15 @@ class ContainerViewController: UIViewController {
         // 2) Add in each view to the container view hierarchy
         //    Add them in opposite order since the view hieracrhy is a stack
         self.addChildViewController(CVc);
-        self.scrollView.addSubview(CVc.view);
+        (self.scrollView as UIScrollView).addSubview(CVc.view);
         CVc.didMoveToParentViewController(self);
 
         self.addChildViewController(BVc);
-        self.scrollView.addSubview(BVc.view);
+        (self.scrollView as UIScrollView).addSubview(BVc.view);
         BVc.didMoveToParentViewController(self);
         
         self.addChildViewController(AVc);
-        self.scrollView.addSubview(AVc.view);
+        (self.scrollView as UIScrollView).addSubview(AVc.view);
         AVc.didMoveToParentViewController(self);
         
         
@@ -51,7 +51,7 @@ class ContainerViewController: UIViewController {
         // 4) Finally set the size of the scroll view that contains the frames
         var scrollWidth: CGFloat  = 3 * self.view.frame.width
         var scrollHeight: CGFloat  = self.view.frame.size.height
-        self.scrollView.contentSize = CGSizeMake(scrollWidth, scrollHeight);
+        (self.scrollView as UIScrollView).contentSize = CGSizeMake(scrollWidth, scrollHeight);
     }
 
     override func didReceiveMemoryWarning() {
