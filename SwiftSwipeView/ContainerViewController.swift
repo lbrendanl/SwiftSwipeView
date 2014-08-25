@@ -17,9 +17,9 @@ class ContainerViewController: UIViewController {
         super.viewDidLoad();
         
         // 1) Create the three views used in the swipe container view
-        var AVc :AViewController =  AViewController();
-        var BVc :BViewController =  BViewController();
-        var CVc :CViewController =  CViewController();
+        var AVc :AViewController =  AViewController(nibName: "AViewController", bundle: nil);
+        var BVc :BViewController =  BViewController(nibName: "BViewController", bundle: nil);
+        var CVc :CViewController =  CViewController(nibName: "CViewController", bundle: nil);
         
         
         // 2) Add in each view to the container view hierarchy
