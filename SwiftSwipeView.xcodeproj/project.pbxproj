@@ -10,7 +10,6 @@
 		C6164C211984D1CD00F8F7D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6164C201984D1CD00F8F7D7 /* AppDelegate.swift */; };
 		C6164C261984D1CD00F8F7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6164C241984D1CD00F8F7D7 /* Main.storyboard */; };
 		C6164C281984D1CD00F8F7D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6164C271984D1CD00F8F7D7 /* Images.xcassets */; };
-		C6164C341984D1CD00F8F7D7 /* SwiftSwipeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6164C331984D1CD00F8F7D7 /* SwiftSwipeViewTests.swift */; };
 		C6164C3E1984D1F100F8F7D7 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6164C3D1984D1F100F8F7D7 /* ContainerViewController.swift */; };
 		C6164C461984D22D00F8F7D7 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6164C401984D22D00F8F7D7 /* AViewController.swift */; };
 		C6164C471984D22D00F8F7D7 /* AViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6164C411984D22D00F8F7D7 /* AViewController.xib */; };
@@ -20,23 +19,12 @@
 		C6164C4B1984D22D00F8F7D7 /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6164C451984D22D00F8F7D7 /* CViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C6164C2E1984D1CD00F8F7D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C6164C131984D1CD00F8F7D7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C6164C1A1984D1CD00F8F7D7;
-			remoteInfo = SwiftSwipeView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		C6164C1B1984D1CD00F8F7D7 /* SwiftSwipeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwipeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6164C1F1984D1CD00F8F7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6164C201984D1CD00F8F7D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6164C251984D1CD00F8F7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6164C271984D1CD00F8F7D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C6164C2D1984D1CD00F8F7D7 /* SwiftSwipeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSwipeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6164C321984D1CD00F8F7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6164C331984D1CD00F8F7D7 /* SwiftSwipeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSwipeViewTests.swift; sourceTree = "<group>"; };
 		C6164C3D1984D1F100F8F7D7 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -50,13 +38,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		C6164C181984D1CD00F8F7D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6164C2A1984D1CD00F8F7D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				C6164C1B1984D1CD00F8F7D7 /* SwiftSwipeView.app */,
-				C6164C2D1984D1CD00F8F7D7 /* SwiftSwipeViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,24 +135,6 @@
 			productReference = C6164C1B1984D1CD00F8F7D7 /* SwiftSwipeView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C6164C2C1984D1CD00F8F7D7 /* SwiftSwipeViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6164C3A1984D1CD00F8F7D7 /* Build configuration list for PBXNativeTarget "SwiftSwipeViewTests" */;
-			buildPhases = (
-				C6164C291984D1CD00F8F7D7 /* Sources */,
-				C6164C2A1984D1CD00F8F7D7 /* Frameworks */,
-				C6164C2B1984D1CD00F8F7D7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C6164C2F1984D1CD00F8F7D7 /* PBXTargetDependency */,
-			);
-			name = SwiftSwipeViewTests;
-			productName = SwiftSwipeViewTests;
-			productReference = C6164C2D1984D1CD00F8F7D7 /* SwiftSwipeViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,10 +146,6 @@
 				TargetAttributes = {
 					C6164C1A1984D1CD00F8F7D7 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					C6164C2C1984D1CD00F8F7D7 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = C6164C1A1984D1CD00F8F7D7;
 					};
 				};
 			};
@@ -205,7 +163,6 @@
 			projectRoot = "";
 			targets = (
 				C6164C1A1984D1CD00F8F7D7 /* SwiftSwipeView */,
-				C6164C2C1984D1CD00F8F7D7 /* SwiftSwipeViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,13 +177,6 @@
 				C6164C491984D22D00F8F7D7 /* BViewController.xib in Resources */,
 				C6164C261984D1CD00F8F7D7 /* Main.storyboard in Resources */,
 				C6164C281984D1CD00F8F7D7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6164C2B1984D1CD00F8F7D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,23 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6164C291984D1CD00F8F7D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6164C341984D1CD00F8F7D7 /* SwiftSwipeViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C6164C2F1984D1CD00F8F7D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C6164C1A1984D1CD00F8F7D7 /* SwiftSwipeView */;
-			targetProxy = C6164C2E1984D1CD00F8F7D7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C6164C241984D1CD00F8F7D7 /* Main.storyboard */ = {
@@ -374,40 +308,6 @@
 			};
 			name = Release;
 		};
-		C6164C3B1984D1CD00F8F7D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSwipeView.app/SwiftSwipeView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftSwipeViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		C6164C3C1984D1CD00F8F7D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSwipeView.app/SwiftSwipeView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftSwipeViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,14 +327,7 @@
 				C6164C391984D1CD00F8F7D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C6164C3A1984D1CD00F8F7D7 /* Build configuration list for PBXNativeTarget "SwiftSwipeViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6164C3B1984D1CD00F8F7D7 /* Debug */,
-				C6164C3C1984D1CD00F8F7D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
