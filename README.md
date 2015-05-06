@@ -1,3 +1,5 @@
 SwiftSwipeView
 ==============
-https://medium.com/swift-programming/ios-swipe-view-with-swift-44fa83a2e078
+
+
+Simple Snap-chat like swipe navigation. Uses one container view controller and three child view controllers to show a swipe navigatino between views.
