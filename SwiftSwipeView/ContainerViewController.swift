@@ -23,7 +23,7 @@ class ContainerViewController: UIViewController {
         
         
         // 2) Add in each view to the container view hierarchy
-        //    Add them in opposite order since the view hieracrhy is a stack
+        //    Add them in opposite order since the view hierarchy is a stack
         self.addChildViewController(CVc);
         self.scrollView!.addSubview(CVc.view);
         CVc.didMoveToParentViewController(self);
